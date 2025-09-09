@@ -1,7 +1,7 @@
 <!--
 SERIOUS HTML CHALLENGE FOR STUDENTS
-
 Instructions:
+
 1. This is your homepage. You must create at least two other HTML files (e.g., about.html, contact.html) and link to them from this page.
 inthose files 
 about.html
@@ -46,52 +46,102 @@ This challenge will test your understanding of linking, structure, forms, tables
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation bar: Link to sections and other HTML files -->
-    <nav>
-        <!-- Example: <a href="#about">About Section</a> | <a href="#contact">Contact Section</a> | <a href="about.html">About Page</a> | <a href="contact.html">Contact Page</a> -->
+            <h2>About Me</h2>
+            <p>Hello!? I'm Emadaldeen Ahmed  I a'm studand learning web development. I love creating websites and solving problems with code.</p>
+            <img src="/home/alight/Downloads/WhatsApp_Image_2025-08-15_at_11.01.27-removebg-preview (1).png" alt="this is my picture">
+            <p> I am washing t-v & playing Football</p>
+            
+
+            <ul id="skills-list">
+        <li>HTML & CSS</li>
+        <li>Creative Writing</li>
+        <li>Reading more</li>
+        <li>Drawing</li>
+    </ul>
+
+    <!-- Navigation bar: links to sections and external pages -->
+    <nav id="above">
+        <a href="#about-section">About Section</a> |
+        <a href="#contact-section">Contact Section</a> |
+        <a href="about.html" target="_blank">About Page</a> |
+        <a href="contact.html" target="_blank">Contact Page</a>
     </nav>
+
     <hr>
-    <!-- Main content area -->
+
+    <!-- Main content area with sections -->
     <div class="main-content" id="main-content">
-        <!-- Section 1: About  add id call it about section -->
-        <section >
-            <!-- Your About content here -->
+
+        <!-- Section 1: About -->
+        <section id="about-section">
+            <h2>About Section</h2>
+            <p>This is the about section of the homepage. You can learn more about me on the About page linked above.</p>
         </section>
-        <!-- Section 2: add id call it  Contact  -->
-        <section >
-            <!-- Your Contact content here -->
+
+        <!-- Section 2: Contact -->
+        <section id="contact-section">
+            <h2>Contact Section</h2>
+            <p>Feel free to reach out through the form below or visit the Contact page.</p>
         </section>
     </div>
+
     <hr>
-    <!-- Embed another HTML file using iframe add a youtube video -->
+
+    <!-- Embed another HTML file using iframe -->
     <div class="iframe-area" id="iframe-area">
-        <!-- Example: <iframe src="about.html" width="400" height="200"></iframe> -->
+        <h3>Emadaldeen About Page</h3>
+        <iframe src="homepage.html" width="600" height="300" title="About Page Preview"></iframe>
     </div>
+
     <hr>
+
     <!-- Small form with labels and inputs -->
     <div class="form-area" id="form-area">
-        <!-- Example:
+        <h3>Quick Contact Form</h3>
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="Submit">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <input type="submit" value="Send">
         </form>
-        -->
     </div>
+
     <hr>
-    <!-- Table to display names but dont copy mine add more names and more rows atleast 3 rows and columns -->
+
+    <!-- Table to display names -->
     <div class="table-area" id="table-area">
-        <!-- Example:
-        <table>
-            <tr><th>Name</th></tr>
-            <tr><td>Alice</td></tr>
-            <tr><td>Bob</td></tr>
-            <tr><td>Charlie</td></tr>
+        <h3>Class Members</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Favorite Color</th>
+                    <th>Hobby</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Edadaldeen</td>
+                    <td>Blue</td>
+                    <td>Coding</td>
+                </tr>
+                <tr>
+                    <td>Ahmed</td>
+                    <td>Red</td>
+                    <td>Painting</td>
+                </tr>
+                <tr>
+                    <td>toba</td>
+                    <td>Green</td>
+                    <td>Football</td>
+                </tr>
+            </tbody>
         </table>
-        -->
     </div>
-    <!-- Add comments throughout your code explaining your choices! -->
+<a href="#above">go up</a>
+    <!-- Comments are used throughout the code to help understand structure -->
 </body>
 </html>
